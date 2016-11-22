@@ -19,7 +19,7 @@ setup(
     packages=['purest'],
     setup_requires=['pytest-runner'],
     tests_require=['pytest'],
-    version='0.0.1',
+    version='0.0.1-1',
     description='Simple dynamic REST consumer',
     long_description=get_long_description(),
     install_requires=get_requirements(),
