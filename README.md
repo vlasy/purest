@@ -11,6 +11,12 @@ article = api.posts[1]()
 comments = api.posts[1].comments()
 ```
 
+# Installation
+
+``` python 
+pip install purest
+```
+
 # Basic usage
 
 There are two main parts of puREST library. First one is concerned with the creation of puREST resources.
