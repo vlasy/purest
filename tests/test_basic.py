@@ -3,13 +3,13 @@ import pytest
 
 @pytest.fixture
 def api():
-    from purest import jsonplaceholderTypicodeCom as api
+    from purest import jsonplaceholder_typicode_com as api
     return api
 
 
 def test_import_resolution():
     from purest import Purest
-    from purest import jsonplaceholderTypicodeCom as api
+    from purest import jsonplaceholder_typicode_com as api
     assert Purest == type(api)
 
 

@@ -71,7 +71,7 @@ class RESTImporter(object):
 
     def load_module(self, name):
         urlName = name.split('.')[1]
-        urlNew = re.sub(r"(\w)([A-Z])", r"\1.\2", urlName)
+        urlNew = urlName.replace('_', '.')
         url = "https://" + urlNew.lower()
 
         return Purest(url)

@@ -4,7 +4,7 @@
 puREST is a dead simple Python REST consumer based on [`requests`](http://docs.python-requests.org/en/master/) aiming for the simplest possible use while keeping all of the [`requests`](http://docs.python-requests.org/en/master/) features.
 
 ``` python
-from purest import jsonplaceholderTypicodeCom as api
+from purest import jsonplaceholder_typicode_com as api
 
 posts = api.posts()
 article = api.posts[1]()
@@ -42,7 +42,7 @@ api = Purest("https://jsonplaceholder.typicode.com/")
 In addition to this method, you can even create the `Purest` resource right during the import from `purest` module. To do this, you have to import the camelCase name of URL from `purest`.
 
 ``` python
-from purest import jsonplaceholderTypicodeCom as api
+from purest import jsonplaceholder_typicode_com as api
 ```
 
 The name you want to import is then transformed:
@@ -59,7 +59,7 @@ If you already have a `Purest` instance pointing to some REST endpoint, it would
 For that reason, you can easily create a new `Purest` object from any existing `Purest` object. It can be achieved either by getting its attribute or by getting its item.
 
 ``` python
-from purest import jsonplaceholderTypicodeCom as api
+from purest import jsonplaceholder_typicode_com as api
 
 posts_url = api.posts
 # equivalent to
@@ -69,7 +69,7 @@ posts_url = api['posts']
 This also works for individual items of REST collections
 
 ``` python
-from purest import jsonplaceholderTypicodeCom as api
+from purest import jsonplaceholder_typicode_com as api
 
 article)url = api.posts[1]
 # equivalent to
@@ -83,7 +83,7 @@ Once you have the `Purest` instance pointing to the desired endpoint, you can ea
 As stated earlier, `Purest` is a [`requests`](http://docs.python-requests.org/en/master/) wrapper so you can also use the ordinary [`requests.get`](http://docs.python-requests.org/en/master/api/#requests.get) and the string you pass to that call will be appended to the URL the `Purest` object is pointing to.
 
 ``` python
-from purest import jsonplaceholderTypicodeCom as api
+from purest import jsonplaceholder_typicode_com as api
 
 posts = api.posts()
 # equivalent to
@@ -105,7 +105,7 @@ By default, after GETting the response, it transforms it to JSON by [`requests.j
 By default, all dictionaries in the response are enhanced with magic methods so that you can acces the dictionary items as if they would be attributes. This is done recursively (for embedded dictionaries as well). This behavior can be disabled by setting `transform_dict` to `False` in `Purest` constructor.
 
 ``` python
-from purest import jsonplaceholderTypicodeCom as api
+from purest import jsonplaceholder_typicode_com as api
 
 article = api.posts[1]()
 
