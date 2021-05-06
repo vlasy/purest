@@ -71,7 +71,7 @@ This also works for individual items of REST collections
 ``` python
 from purest import jsonplaceholder_typicode_com as api
 
-article)url = api.posts[1]
+article_url = api.posts[1]
 # equivalent to
 article_url = api['posts'][1]
 ```
